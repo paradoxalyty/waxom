@@ -1,3 +1,3 @@
 # Waxom
 
-<a href="https://paradoxalyty.github.io/waxom/" target="_blank">Waxom</a>
+<a href="https://paradoxalyty.github.io/waxom/">Waxom</a>
