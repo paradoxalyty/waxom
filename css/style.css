@@ -39,11 +39,15 @@ body {
 
 
 .header-block {
+    background: url(../img/bg-header.png);
+    background-size: cover;
+}
+
+.header-block:hover {
     background:
         linear-gradient(rgba(17, 17, 17, 0.7),
         rgba(17, 17, 17, 0.7)),
         url(../img/bg-header.png);
-    background-size: cover;
 }
 
 h1 {
