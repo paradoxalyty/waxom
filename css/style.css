@@ -1,0 +1,54 @@
+/*
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400|Raleway:400,500,600,700,800|Roboto');
+*/
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat/Montserrat-Light.ttf");
+    src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+    src: url("../fonts/Montserrat/Montserrat-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url("../fonts/Raleway/Raleway-Bold.ttf");
+    src: url("../fonts/Raleway/Raleway-ExtraBold.ttf");
+    src: url("../fonts/Raleway/Raleway-Medium.ttf");
+    src: url("../fonts/Raleway/Raleway-Regular.ttf");
+    src: url("../fonts/Raleway/Raleway-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("..fonts/Roboto/Roboto-Regular.ttf");
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 1920px;
+    margin: 0 auto;
+}
+
+
+
+
+
+.header-block {
+    background:
+        linear-gradient(rgba(17, 17, 17, 0.7),
+        rgba(17, 17, 17, 0.7)),
+        url(../img/bg-header.png);
+    background-size: cover;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 52px;
+    font-weight: 400;
+}
