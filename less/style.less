@@ -1,0 +1,112 @@
+@import "fonts.less";
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.header-block {
+    padding: 40px 150px;
+    background: url(../img/bg-header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-block:hover {
+    background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/bg-header.png);
+}
+
+.logo-nav {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 226px 285px 226px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 181px;
+    margin: 0 219px 0 0;
+    text-decoration: none;
+}
+
+.logo-svg {
+    fill: #fff;
+    width: 64px;
+    height: 56px;
+}
+
+.logo-text {
+    display: block;
+    color: #fff;
+    font-family: "raleway-regular";
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: -1.36px;
+}
+
+.header-nav {
+    display: flex;
+    margin: 0 33px 0 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 0 30px 0 0;
+}
+
+.header-nav a {
+    width: 55px;
+    height: 10px;
+    color: #fff;
+    font-family: "montserrat-light";
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: -0.4px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.bag-svg {
+    width: 18px;
+    height: 24px;
+    padding: 0 30px 0 0;
+    fill: #fff;
+}
+
+.search-svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+}
+
+.search {
+    position: absolute;
+    right: -85px;
+    display: none;
+}
+.nav-search:focus .search{
+    display: block;
+}
+
+.search:active {
+    display: block;
+}
+
+
+h1 {
+    color: #ffffff;
+    font-family: "montserrat-regular";
+    font-size: 52px;
+    font-weight: 400;
+}
