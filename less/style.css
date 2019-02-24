@@ -102,6 +102,20 @@ body {
   box-shadow: none;
   background: transparent;
 }
+h3 {
+  padding: 0 0 25px 0;
+  color: #555555;
+  font-family: "raleway-semibold";
+  font-size: 30px;
+  font-weight: 400;
+}
+p {
+  color: #8c8c8c;
+  font-family: "montserrat-light";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 32px;
+}
 .header-block {
   width: 1620px;
   padding: 40px 150px;
@@ -137,9 +151,9 @@ body {
   text-decoration: none;
 }
 .logo-svg {
-  fill: #fff;
   width: 64px;
   height: 56px;
+  fill: #fff;
 }
 .logo-text {
   display: block;
@@ -196,33 +210,29 @@ body {
   max-width: 590px;
   text-align: center;
 }
-.svg-arrow {
-  width: 40px;
-  height: 73px;
-  margin-top: 100px;
-  fill: #fff;
-}
-h2 {
+.heading h2 {
   margin: 0 0 3px 0;
   color: #fff;
   font-family: "raleway-medium";
   font-size: 36px;
   font-weight: 500;
 }
-h1 {
+.heading h1 {
   margin: 0 0 16px 0;
   color: #fff;
   font-family: "raleway-extrabold";
   font-size: 52px;
   font-weight: 400;
 }
-p {
+.heading p {
   margin: 0 0 48px 0;
   color: #fff;
-  font-family: "montserrat-light";
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 24px;
+}
+.svg-arrow {
+  width: 40px;
+  height: 73px;
+  margin-top: 100px;
+  fill: #fff;
 }
 .slider-nav {
   display: flex;
@@ -242,3 +252,114 @@ p {
   box-shadow: 0 0 0 4px #d3c1ad;
   background: transparent;
 }
+/*========ABOUT-1=========================================*/
+.about-block1 {
+  display: flex;
+  justify-content: center;
+  padding: 84px 0;
+}
+.about-block1 .services {
+  max-width: 267px;
+  margin: 0 17px;
+  text-align: center;
+}
+.about-block1 .services .svg {
+  width: 49px;
+  height: 49px;
+  padding-bottom: 29px;
+  color: #555;
+}
+.about-block1 .services h4 {
+  padding: 0 0 19px 0;
+  color: #555555;
+  font-family: "raleway-semibold";
+  font-size: 22px;
+  font-weight: 400;
+}
+.about-block1 .services p {
+  padding: 0 0 30px 0;
+  color: #8c8c8c;
+  font-family: "montserrat-light";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.about-block1 .services .svg-line {
+  width: 70px;
+  height: 3px;
+  padding: 0;
+  fill: #8c8c8c;
+}
+.about-block1 .services:hover {
+  cursor: pointer;
+}
+.about-block1 .services:hover h4 {
+  color: #c7b299;
+}
+.about-block1 .services:hover .svg {
+  fill: #c7b299;
+}
+/*========ABOUT-2=========================================*/
+.about-block2 {
+  position: relative;
+  min-height: 700px;
+  padding: 80px 0 0 0;
+  background: #fbfaf8;
+  text-align: center;
+}
+.about-block2 p {
+  max-width: 770px;
+  padding: 0 0 40px 0;
+  margin: 0 auto;
+}
+.about-block2 .center {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 577px;
+}
+.about-block2 .left {
+  position: absolute;
+  bottom: 0;
+  left: 345px;
+}
+.about-block2 .left:hover {
+  z-index: 2;
+}
+.about-block2 .right {
+  position: absolute;
+  right: 345px;
+  bottom: 0;
+}
+.about-block2 .right:hover {
+  z-index: 2;
+}
+/*=========PURCHASE=======================================*/
+.purchase-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 375px;
+  background-color: #f4f5f8;
+  background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+}
+.purchase-block h3 {
+  padding: 0;
+  color: #ffffff;
+  font-family: "raleway-regular";
+  font-size: 28px;
+  font-weight: 400;
+}
+.purchase-block span {
+  color: #c7b299;
+}
+.purchase-block p {
+  color: #615855;
+  font-size: 18px;
+}
+.purchase-block .btn {
+  margin-top: 5px;
+}
+/*========ABOUT===========================================*/
+/*========ABOUT===========================================*/
+/*========ABOUT===========================================*/
+/*========ABOUT===========================================*/

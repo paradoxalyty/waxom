@@ -60,6 +60,22 @@ body {
     }
 }
 
+h3 {
+    padding: 0 0 25px 0;
+    color: rgb(85, 85, 85);
+    font-family: "raleway-semibold";
+    font-size: 30px;
+    font-weight: 400;
+}
+
+p {
+    color: rgb(140, 140, 140);
+    font-family: "montserrat-light";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
 
 
 
@@ -109,9 +125,9 @@ body {
 }
 
 .logo-svg {
-    fill: #fff;
     width: 64px;
     height: 56px;
+    fill: #fff;
 }
 
 .logo-text {
@@ -131,7 +147,7 @@ body {
 .header-nav-item {
     list-style-type: none;
     padding: 0 30px 0 0;
-    
+
     a {
         width: 55px;
         height: 10px;
@@ -177,6 +193,27 @@ body {
 .heading {
     max-width: 590px;
     text-align: center;
+
+    h2 {
+        margin: 0 0 3px 0;
+        color: #fff;
+        font-family: "raleway-medium";
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    h1 {
+        margin: 0 0 16px 0;
+        color: #fff;
+        font-family: "raleway-extrabold";
+        font-size: 52px;
+        font-weight: 400;
+    }
+
+    p {
+        margin: 0 0 48px 0;
+        color: #fff;
+    }
 }
 
 .svg-arrow {
@@ -184,31 +221,6 @@ body {
     height: 73px;
     margin-top: 100px;
     fill: #fff;
-}
-
-h2 {
-    margin: 0 0 3px 0;
-    color: #fff;
-    font-family: "raleway-medium";
-    font-size: 36px;
-    font-weight: 500;
-}
-
-h1 {
-    margin: 0 0 16px 0;
-    color: #fff;
-    font-family: "raleway-extrabold";
-    font-size: 52px;
-    font-weight: 400;
-}
-
-p {
-    margin: 0 0 48px 0;
-    color: #fff;
-    font-family: "montserrat-light";
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 24px;
 }
 
 .slider-nav {
@@ -232,3 +244,145 @@ p {
         }
     }
 }
+
+
+/*========ABOUT-1=========================================*/
+
+
+.about-block1 {
+    display: flex;
+    justify-content: center;
+    padding: 84px 0;
+
+    .services {
+        max-width: 267px;
+        margin: 0 17px;
+        text-align: center;
+
+        .svg {
+            width: 49px;
+            height: 49px;
+            padding-bottom: 29px;
+            color: #555;
+        }
+
+        h4 {
+            padding: 0 0 19px 0;
+            color: rgb(85, 85, 85);
+            font-family: "raleway-semibold";
+            font-size: 22px;
+            font-weight: 400;
+        }
+
+        p {
+            padding: 0 0 30px 0;
+            color: rgb(140, 140, 140);
+            font-family: "montserrat-light";
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 24px;
+        }
+
+        .svg-line {
+            width: 70px;
+            height: 3px;
+            padding: 0;
+            fill: rgb(140, 140, 140);
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:hover h4 {
+            color: rgb(199, 178, 153);
+        }
+
+        &:hover .svg {
+            fill: rgb(199, 178, 153);
+        }
+    }
+}
+
+/*========ABOUT-2=========================================*/
+
+
+.about-block2 {
+    position: relative;
+    min-height: 700px;
+    padding: 80px 0 0 0;
+    background: #fbfaf8;
+    text-align: center;
+
+    p {
+        max-width: 770px;
+        padding: 0 0 40px 0;
+        margin: 0 auto;
+    }
+
+    .center {
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 577px;
+    }
+
+    .left {
+        position: absolute;
+        bottom: 0;
+        left: 345px;
+
+        &:hover {
+            z-index: 2;
+        }
+    }
+
+    .right {
+        position: absolute;
+        right: 345px;
+        bottom: 0;
+
+        &:hover {
+            z-index: 2;
+        }
+    }
+}
+
+
+/*=========PURCHASE=======================================*/
+
+
+.purchase-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 375px;
+    background-color: rgb(244, 245, 248);
+    background-image: linear-gradient(to right, rgb(33, 27, 25) 0%, rgb(78, 52, 39) 100%);
+
+    h3 {
+        padding: 0;
+        color: rgb(255, 255, 255);
+        font-family: "raleway-regular";
+        font-size: 28px;
+        font-weight: 400;
+    }
+
+    span {
+        color: rgb(199, 178, 153);
+    }
+
+    p {
+        color: rgb(97, 88, 85);
+        font-size: 18px;
+    }
+    
+    .btn {
+        margin-top: 5px;
+    }
+}
+
+
+/*========ABOUT===========================================*/
+/*========ABOUT===========================================*/
+/*========ABOUT===========================================*/
+/*========ABOUT===========================================*/
