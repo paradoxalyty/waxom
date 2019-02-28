@@ -60,6 +60,13 @@ body {
   width: 1920px;
   margin: 0 auto;
 }
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+a:focus {
+  outline: none;
+}
 .motion {
   transition: .3s;
   -o-transition: .3s;
@@ -198,8 +205,6 @@ p {
   font-size: 14px;
   font-weight: 300;
   letter-spacing: -0.4px;
-  text-decoration: none;
-  text-transform: capitalize;
 }
 .header-nav-item a:hover {
   color: #c7b299;
@@ -393,6 +398,91 @@ p {
   margin-top: 5px;
 }
 /*========PORTFOLIO=======================================*/
+.portfolio-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 80px 0;
+}
+.portfolio-head {
+  text-align: center;
+}
+.portfolio-head p {
+  max-width: 757px;
+  padding-bottom: 35px;
+  line-height: 28px;
+}
+.portfolio-nav {
+  max-width: 800px;
+  margin-bottom: 35px;
+}
+.portfolio-nav .btn {
+  padding: 10px 24px;
+  margin: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #fff;
+  color: #8c8c8c;
+  font-family: "montserrat-regular";
+  font-weight: 300;
+  line-height: 21px;
+  -webkit-box-shadow: 0 0 0 1px #ebebeb;
+          box-shadow: 0 0 0 1px #ebebeb;
+}
+.portfolio-nav .btn:hover {
+  background: #998675;
+  color: #fff;
+}
+.portfolio-nav .btn:focus {
+  background: #fff;
+  color: #8c8c8c;
+}
+.portfolio-nav .btn:active {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.all-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1200px;
+}
+.all-projects .btn {
+  margin-top: 25px;
+  text-align: center;
+  line-height: 50px;
+}
+.project {
+  padding: 15px;
+}
+.in-project {
+  padding: 30px 0 30px 30px;
+  background-color: #fbfaf8;
+}
+.in-project h4 {
+  color: #c7b299;
+  font-family: "raleway-regular";
+  font-size: 20px;
+  font-weight: 500;
+}
+.in-project span {
+  color: #d1d1d1;
+  font-family: "montserrat-regular";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
 /*========VIDEO===========================================*/
 /*========MOBILE==========================================*/
 /*========COUNTER=========================================*/
