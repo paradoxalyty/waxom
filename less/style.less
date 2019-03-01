@@ -13,6 +13,16 @@ body {
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+
+    &:focus {
+        outline: none;
+    }
+
+}
+
 .motion {
     transition: .3s;
     -o-transition: .3s;
@@ -156,12 +166,11 @@ p {
         font-size: 14px;
         font-weight: 300;
         letter-spacing: -0.4px;
-        text-decoration: none;
-        text-transform: capitalize;
 
         &:hover {
             color: #c7b299;
         }
+
     }
 }
 
@@ -369,7 +378,7 @@ p {
         color: rgb(97, 88, 85);
         font-size: 18px;
     }
-    
+
     .btn {
         margin-top: 5px;
     }
@@ -377,6 +386,97 @@ p {
 
 
 /*========PORTFOLIO=======================================*/
+
+
+.portfolio-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 80px 0;
+}
+
+.portfolio-head {
+    text-align: center;
+
+    p {
+        max-width: 757px;
+        padding-bottom: 35px;
+        line-height: 28px;
+    }
+
+
+}
+
+.portfolio-nav {
+    max-width: 800px;
+    margin-bottom: 35px;
+
+    .btn {
+        padding: 10px 24px;
+        margin: 5px;
+        box-shadow: none;
+        background: #fff;
+        color: rgb(140, 140, 140);
+        font-family: "montserrat-regular";
+        font-weight: 300;
+        line-height: 21px;
+        box-shadow: 0 0 0 1px #ebebeb;
+
+        &:hover {
+            background: rgb(153, 134, 117);
+            color: #fff;
+        }
+
+        &:focus {
+            background: #fff;
+            color: rgb(140, 140, 140);
+        }
+
+        &:active {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+}
+
+.all-projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+
+    .btn {
+        margin-top: 25px;
+        text-align: center;
+        line-height: 50px;
+    }
+}
+
+.project {
+    padding: 15px;
+}
+
+.in-project {
+    padding: 30px 0 30px 30px;
+    background-color: rgb(251, 250, 248);
+
+    h4 {
+        color: rgb(199, 178, 153);
+        font-family: "raleway-regular";
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    span {
+        color: rgb(209, 209, 209);
+        font-family: "montserrat-regular";
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+    }
+}
+
+
 /*========VIDEO===========================================*/
 /*========MOBILE==========================================*/
 /*========COUNTER=========================================*/
