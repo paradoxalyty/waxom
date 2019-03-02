@@ -394,8 +394,8 @@ p {
   color: #fff;
 }
 .portfolio-nav .btn:focus {
-  background: #fff;
-  color: #8c8c8c;
+  background: #998675;
+  color: #fff;
 }
 .portfolio-nav .btn:active {
   outline: none;
@@ -413,9 +413,57 @@ p {
   line-height: 50px;
 }
 .project {
-  padding: 15px;
+  position: relative;
+  margin: 15px;
+  background: #362f2d;
+}
+.project .surprise {
+  position: absolute;
+  z-index: 1;
+  top: 106px;
+  left: 144px;
+  display: none;
+}
+.project .svg {
+  width: 26px;
+  height: 26px;
+  margin: 14px;
+}
+.project .svg:hover {
+  fill: #fbfaf8;
+  transform: scale(2);
+}
+.project .svg-link {
+  fill: #c7b299;
+}
+.project .svg-lupa {
+  fill: #fff;
+}
+.project img {
+  display: block;
+  width: 370px;
+  height: 237px;
+}
+.project:hover img {
+  opacity: 0.3;
+}
+.project:hover .in-project {
+  background-color: #362f2d;
+}
+.project:hover h4 {
+  color: #fff;
+}
+.project:hover span {
+  color: #c7b299;
+}
+.project:hover .in-project::before {
+  border-top: 20px solid #362f2d;
+}
+.project:hover .surprise {
+  display: block;
 }
 .in-project {
+  position: relative;
   padding: 30px 0 30px 30px;
   background-color: #fbfaf8;
 }
@@ -431,6 +479,16 @@ p {
   font-size: 14px;
   font-weight: 300;
   line-height: 20px;
+}
+.in-project::before {
+  display: block;
+  position: absolute;
+  top: -38px;
+  left: 20px;
+  transform: rotate(180deg);
+  content: "";
+  border: 20px solid transparent;
+  border-top: 20px solid #fbfaf8;
 }
 /*========VIDEO===========================================*/
 /*========MOBILE==========================================*/
