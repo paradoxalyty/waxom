@@ -577,6 +577,12 @@ p {
 .details summary::-webkit-details-marker {
   display: none;
 }
+.details summary:hover {
+  cursor: pointer;
+}
+.details summary:focus {
+  outline: none;
+}
 .details summary::before {
   position: absolute;
   display: block;
@@ -600,3 +606,51 @@ p {
   line-height: 19px;
 }
 /*========COUNTER=========================================*/
+.counter-block {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+  background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+}
+.counter {
+  position: relative;
+  width: 140px;
+  margin: 0 36px;
+  text-align: center;
+}
+.counter .svg {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 30px;
+  fill: #c7b299;
+}
+.counter span {
+  display: block;
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: "montserrat-extralight";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.counter h5 {
+  margin-bottom: 30px;
+  color: #c7b299;
+  font-family: "montserrat-regular";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.counter::after {
+  position: absolute;
+  left: 55px;
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  content: "";
+}
+/*========RECENT==========================================*/
+/*========PARTNERS========================================*/
+/*========FOOTER==========================================*/
