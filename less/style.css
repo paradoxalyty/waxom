@@ -172,6 +172,7 @@ p {
 }
 .header-nav {
   display: flex;
+  justify-content: center;
   margin: 0 33px 0 0;
 }
 .header-nav-item {
@@ -259,6 +260,7 @@ p {
   padding: 84px 0;
 }
 .about-block1 .services {
+  position: relative;
   max-width: 267px;
   margin: 0 17px;
   text-align: center;
@@ -284,11 +286,21 @@ p {
   font-weight: 300;
   line-height: 24px;
 }
-.about-block1 .services .svg-line {
+.about-block1 .services::after {
+  position: absolute;
+  bottom: 0;
+  left: 99px;
+  display: block;
   width: 70px;
   height: 3px;
-  padding: 0;
-  fill: #8c8c8c;
+  background: #f1eee9;
+  content: "";
+}
+.about-block1 .services:hover::after {
+  left: 35px;
+  width: 207px;
+  height: 4px;
+  background: #c7b299;
 }
 .about-block1 .services:hover {
   cursor: pointer;
@@ -485,10 +497,9 @@ p {
   position: absolute;
   top: -38px;
   left: 20px;
-  transform: rotate(180deg);
   content: "";
   border: 20px solid transparent;
-  border-top: 20px solid #fbfaf8;
+  border-bottom: 20px solid #fbfaf8;
 }
 /*========VIDEO===========================================*/
 .video-block {
@@ -614,7 +625,7 @@ p {
 }
 .counter {
   position: relative;
-  width: 140px;
+  min-width: 140px;
   margin: 0 36px;
   text-align: center;
 }
@@ -648,9 +659,139 @@ p {
   display: block;
   width: 30px;
   height: 2px;
-  background-color: #fff;
+  background: #fff;
   content: "";
 }
+.counter:hover::after {
+  left: 20px;
+  width: 100px;
+  height: 3px;
+  background: #c7b299;
+}
 /*========RECENT==========================================*/
+.recent-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 0;
+}
+.recent-block h2 {
+  margin-bottom: 30px;
+  color: #555;
+  font-family: "raleway-semibold";
+  font-size: 30px;
+  font-weight: 400;
+}
+.recent-block p {
+  max-width: 770px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.recent {
+  display: flex;
+  justify-content: center;
+}
+.recent article {
+  position: relative;
+  margin: 0 15px;
+  border: 1px solid #f8f8f8;
+}
+.recent article:hover {
+  background-color: #362f2d;
+}
+.recent article:hover img {
+  opacity: .3;
+}
+.recent article:hover h4 {
+  color: #c7b299;
+}
+.recent article:hover p {
+  color: #fff;
+}
+.recent article:hover .date {
+  background: #c7b299;
+}
+.recent article:hover .time {
+  background: #a48d72;
+}
+.recent .date-time {
+  position: absolute;
+  display: block;
+  padding: 20px;
+}
+.recent .date-time span {
+  display: block;
+  text-align: center;
+}
+.recent .date {
+  width: 50px;
+  height: 17px;
+  padding: 9px 0;
+  border-radius: 3px 3px 0 0;
+  color: #fff;
+  font-family: "montserrat-regular";
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 20px;
+  background: #363636;
+}
+.recent .time {
+  width: 50px;
+  height: 25px;
+  border-radius: 0 0 3px 3px;
+  color: #fff;
+  font-family: "roboto";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  background: #252525 center / cover;
+}
+.recent img {
+  display: block;
+  width: 370px;
+  height: 220px;
+}
+.recent div {
+  padding: 30px;
+}
+.recent h4 {
+  margin-bottom: 15px;
+  color: #555;
+  font-family: "raleway-regulyar";
+  font-size: 20px;
+  font-weight: 500;
+}
+.recent p {
+  max-width: 300px;
+  margin-bottom: 25px;
+  color: #8c8c8c;
+  font-family: "montserrat-regular";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  text-align: left;
+}
+.recent a {
+  position: relative;
+  color: #c7b299;
+  font-family: "montserrat-regular";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+.recent a::after {
+  position: absolute;
+  top: 0;
+  right: -25px;
+  display: block;
+  border: 8px solid transparent;
+  border-left: 8px solid #c7b299;
+  content: "";
+}
+.recent a:hover::after {
+  right: -35px;
+  transform: scale(1.5);
+}
 /*========PARTNERS========================================*/
 /*========FOOTER==========================================*/
