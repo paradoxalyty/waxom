@@ -100,15 +100,13 @@ p {
 .header-block {
     width: (@width)-300;
     padding: 40px 150px;
-    background: url(../img/bg-header.png);
+    background: url(../img/bg-header.png) no-repeat center/cover;/*
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
 
     &:hover {
         background: linear-gradient(rgba(17, 17, 17, .7), rgba(17, 17, 17, .7)),
-            url(../img/bg-header.png);
-        background-size: cover;
-        background-repeat: no-repeat;
+            url(../img/bg-header.png) no-repeat center/cover;
     }
 
     &:hover .svg-arrow {
@@ -126,7 +124,8 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0 226px 279px 226px;
+    max-width: 1200px;
+    margin: 0 auto 279px auto;
 }
 
 .logo {
@@ -134,7 +133,6 @@ p {
     justify-content: space-between;
     align-items: center;
     width: 181px;
-    margin: 0 219px 0 0;
     text-decoration: none;
 }
 
@@ -151,6 +149,11 @@ p {
     font-size: 34px;
     font-weight: 400;
     letter-spacing: -1.36px;
+}
+
+.header-navbar {
+    display: flex;
+    align-items: center;
 }
 
 .header-nav {
@@ -572,16 +575,12 @@ p {
 .video-block {
     display: flex;
     justify-content: center;
-    background-image: url(../img/bg-video.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url(../img/bg-video.jpg) no-repeat center/cover;
     text-align: center;
 
     &:hover {
         background: linear-gradient(rgba(17, 17, 17, .7), rgba(17, 17, 17, .7)),
-            url(../img/bg-video.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
+            url(../img/bg-video.jpg) no-repeat center/cover;
     }
 }
 

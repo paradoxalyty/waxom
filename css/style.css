@@ -132,15 +132,14 @@ p {
 .header-block {
   width: 1620px;
   padding: 40px 150px;
-  background: url(../img/bg-header.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url(../img/bg-header.png) no-repeat center / cover;
+  /*
+    background-size: cover;
+    background-repeat: no-repeat;*/
 }
 .header-block:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url(../img/bg-header.png);
-  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/bg-header.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url(../img/bg-header.png) no-repeat center / cover;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/bg-header.png) no-repeat center / cover;
 }
 .header-block:hover .svg-arrow {
   fill: #a3a2a0;
@@ -161,7 +160,8 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 226px 279px 226px;
+  max-width: 1200px;
+  margin: 0 auto 279px auto;
 }
 .logo {
   display: -webkit-box;
@@ -174,7 +174,6 @@ p {
       -ms-flex-align: center;
           align-items: center;
   width: 181px;
-  margin: 0 219px 0 0;
   text-decoration: none;
 }
 .logo-svg {
@@ -189,6 +188,14 @@ p {
   font-size: 34px;
   font-weight: 400;
   letter-spacing: -1.36px;
+}
+.header-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header-nav {
   display: -webkit-box;
@@ -566,16 +573,12 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../img/bg-video.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url(../img/bg-video.jpg) no-repeat center / cover;
   text-align: center;
 }
 .video-block:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url(../img/bg-video.jpg);
-  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/bg-video.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url(../img/bg-video.jpg) no-repeat center / cover;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/bg-video.jpg) no-repeat center / cover;
 }
 .block-padding {
   width: 570px;
