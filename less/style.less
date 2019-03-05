@@ -100,7 +100,8 @@ p {
 .header-block {
     width: (@width)-300;
     padding: 40px 150px;
-    background: url(../img/bg-header.png) no-repeat center/cover;/*
+    background: url(../img/bg-header.png) no-repeat center/cover;
+    /*
     background-size: cover;
     background-repeat: no-repeat;*/
 
@@ -278,7 +279,7 @@ p {
             color: #555;
         }
 
-        h4 {
+        h5 {
             margin: 0 0 19px 0;
             color: rgb(85, 85, 85);
             font-family: "raleway-semibold";
@@ -317,7 +318,7 @@ p {
             cursor: pointer;
         }
 
-        &:hover h4 {
+        &:hover h5 {
             color: rgb(199, 178, 153);
         }
 
@@ -520,7 +521,7 @@ p {
         background-color: #362f2d;
     }
 
-    &:hover h4 {
+    &:hover h5 {
         color: #fff;
     }
 
@@ -542,7 +543,7 @@ p {
     padding: 30px 0 30px 30px;
     background-color: #fbfaf8;
 
-    h4 {
+    h5 {
         color: #c7b299;
         font-family: "raleway-regular";
         font-size: 20px;
@@ -838,7 +839,7 @@ p {
             opacity: .3;
         }
 
-        &:hover h4 {
+        &:hover h6 {
             color: #c7b299;
         }
 
@@ -901,7 +902,7 @@ p {
         padding: 30px;
     }
 
-    h4 {
+    h6 {
         margin-bottom: 15px;
         color: #555;
         font-family: "raleway-regular";
@@ -919,31 +920,31 @@ p {
         line-height: 22px;
         text-align: left;
     }
+}
 
-    a {
-        position: relative;
+.small-arrow {
+    position: relative;
+    display: block;
+    width: 100px;
+    color: #c7b299;
+    font-family: "montserrat-regular";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+
+    &::after {
+        position: absolute;
+        top: 3px;
+        right: 0;
         display: block;
-        width: 100px;
-        color: #c7b299;
-        font-family: "montserrat-regular";
-        font-size: 14px;
-        font-weight: 300;
-        line-height: 20px;
+        border: 8px solid transparent;
+        border-left: 8px solid #c7b299;
+        content: "";
+    }
 
-        &::after {
-            position: absolute;
-            top: 3px;
-            right: 0;
-            display: block;
-            border: 8px solid transparent;
-            border-left: 8px solid #c7b299;
-            content: "";
-        }
-
-        &:hover::after {
-            right: -10px;
-            transform: scale(1.5);
-        }
+    &:hover::after {
+        right: -10px;
+        transform: scale(1.5);
     }
 }
 
@@ -969,4 +970,123 @@ p {
 }
 
 
+/*========section-footer==================================*/
+
+
+.footer-block {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+    background: #191919;
+
+    h4 {
+        margin-bottom: 25px;
+        color: #fff;
+        font-family: "raleway-regular";
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .timing {
+        display: block;
+        color: #363636;
+        font-family: "montserrat-regular";
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 20px;
+    }
+
+    p {
+        color: #555;
+        font-family: "montserrat-regular";
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        
+        &:hover {
+            color: #c7b299;
+        }
+        
+        &:hover span {
+            color: #fff;
+        }
+    }
+
+    .underline::after {
+        display: block;
+        width: 270px;
+        height: 1px;
+        margin: 20px 0;
+        background: #252525;
+        content: "";
+    }
+}
+
+.box {
+    padding-top: 25px;
+    margin: 0 20px;
+}
+
+.logo-box {
+
+    padding: 0;
+
+    .logo {
+        margin-bottom: 25px;
+    }
+
+    p {
+        width: 258px;
+        margin-bottom: 30px;
+        line-height: 24px;
+    }
+
+    .small-arrow {
+        color: #d1d1d1;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .small-arrow::after {
+        border-left: 8px solid #d1d1d1;
+    }
+}
+
+.posts-box {
+    width: 270px;
+    
+    span {
+        display: block;
+        padding-bottom: 10px;
+    }
+}
+
+.twitter-box {
+
+    p {
+        width: 275px;
+    }
+    
+    font {
+        color: #00bff3;
+    }
+    
+    a {
+        color: #959595;
+    }
+    
+    span {
+        margin-top: 10px;
+    }
+}
+
+.dribble-box {
+    width: 270px;
+}
+
 /*========FOOTER==========================================*/
+
+
+.footer-line {
+    background-color: #111;
+}
