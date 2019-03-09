@@ -1278,4 +1278,8 @@ label {
             justify-content: center;
     margin: 15px 0;
   }
+  .footer-line p,
+  .footer-line a {
+    color: #8c8c8c;
+  }
 }
