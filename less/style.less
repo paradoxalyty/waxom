@@ -1,6 +1,4 @@
 @import "fonts.less";
-@width: 1920px;
-
 
 
 * {
@@ -12,8 +10,9 @@
     display: none;
 }
 
-body {
-    width: @width;
+.container {
+    max-width: 1920px;
+    min-width: 100%;
     margin: 0 auto;
 }
 
@@ -98,7 +97,7 @@ p {
 
 
 .header-block {
-    width: (@width)-300;
+    max-width: 100%;
     padding: 40px 150px;
     background: url(../img/bg-header.png) no-repeat center/cover;
     /*
@@ -349,7 +348,7 @@ p {
         position: absolute;
         z-index: 1;
         bottom: 0;
-        left: 577px;
+        left: 30%;
     }
 
     .left {
@@ -977,7 +976,7 @@ p {
     display: flex;
     justify-content: center;
     padding: 80px 0;
-    background: #191919;
+    background: #191919 center/cover;
 
     h4 {
         margin-bottom: 25px;
@@ -997,28 +996,26 @@ p {
     }
 
     p {
+        position: relative;
         color: #555;
         font-family: "montserrat-regular";
         font-size: 14px;
         font-weight: 300;
         line-height: 20px;
-        
+
         &:hover {
             color: #c7b299;
         }
-        
+
         &:hover span {
             color: #fff;
         }
     }
 
-    .underline::after {
-        display: block;
-        width: 270px;
-        height: 1px;
-        margin: 20px 0;
-        background: #252525;
-        content: "";
+    .underline {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #252525;
+        margin-bottom: 10px;
     }
 }
 
@@ -1054,7 +1051,7 @@ p {
 
 .posts-box {
     width: 270px;
-    
+
     span {
         display: block;
         padding-bottom: 10px;
@@ -1066,27 +1063,78 @@ p {
     p {
         width: 275px;
     }
-    
+
     font {
         color: #00bff3;
     }
-    
+
     a {
         color: #959595;
     }
-    
+
     span {
         margin-top: 10px;
     }
 }
 
 .dribble-box {
-    width: 270px;
+    width: 290px;
+
+    img {
+        margin: 5px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
 
 /*========FOOTER==========================================*/
 
 
 .footer-line {
-    background-color: #111;
+    padding: 45px 0;
+    background: #111 center/cover;
+
+    .center {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    .left-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 500px;
+    }
+
+    p,
+    a {
+        padding: 0 10px;
+        font-family: "montserrat-regular";
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 20px;
+        color: #242424;
+
+        span {
+            color: #545454;
+        }
+        
+        &:hover {
+            color: #c7b299;
+        }
+        
+        &:hover span{
+            color: #c7b299;
+        }
+    }
+
+    .line-right {
+        border-right: 1px solid #252525;
+    }
 }
+
+@import "mediaqueries.less";
