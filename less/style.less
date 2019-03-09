@@ -10,7 +10,7 @@
     display: none;
 }
 
-.container {
+body {
     max-width: 1920px;
     margin: 0 auto;
 }
@@ -99,9 +99,6 @@ p {
     max-width: 100%;
     padding: 40px 150px;
     background: url(../img/bg-header.png) no-repeat center/cover;
-    /*
-    background-size: cover;
-    background-repeat: no-repeat;*/
 
     &:hover {
         background: linear-gradient(rgba(17, 17, 17, .7), rgba(17, 17, 17, .7)),
@@ -155,6 +152,11 @@ p {
     align-items: center;
 }
 
+#menu,
+label {
+    display: none;
+}
+
 .header-nav {
     display: flex;
     justify-content: center;
@@ -184,13 +186,14 @@ p {
 .bag-svg {
     width: 18px;
     height: 24px;
-    padding: 0 30px 0 0;
+    margin: 0 15px;
     fill: #fff;
 }
 
 .search-svg {
     width: 24px;
     height: 24px;
+    margin: 0 15px;
     fill: #fff;
 }
 
@@ -954,7 +957,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 140px 0;
+    padding: 139px 0;
     background: url(../img/bg-partners.jpg) no-repeat center/cover;
 
     &:hover {
@@ -1038,6 +1041,7 @@ p {
     }
 
     .small-arrow {
+        width: 130px;
         color: #d1d1d1;
         font-size: 14px;
         font-weight: 400;
@@ -1106,7 +1110,7 @@ p {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 500px;
+        max-width: 600px;
     }
 
     p,
@@ -1121,12 +1125,12 @@ p {
         span {
             color: #545454;
         }
-        
+
         &:hover {
             color: #c7b299;
         }
-        
-        &:hover span{
+
+        &:hover span {
             color: #fff;
         }
     }
